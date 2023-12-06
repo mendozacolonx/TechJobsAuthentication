@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using TechJobsAuthentication.Models;
 using TechJobsAuthentication.Data;
 using TechJobsAuthentication.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TechJobsAuthentication.Controllers
 {
@@ -14,14 +15,14 @@ namespace TechJobsAuthentication.Controllers
         {
             context = dbContext;
         }
-
+        [AllowAnonymous]
         public IActionResult Index()
         {
             List<Job> jobs = context.Jobs.ToList();
 
             return View(jobs);
         }
-
+        [Authorize]
         [HttpGet("/Add")]
         public IActionResult Add()
         {
@@ -30,7 +31,7 @@ namespace TechJobsAuthentication.Controllers
             return View(addJobViewModel);
         }
 
-
+        
         public IActionResult ProcessAddJobForm(AddJobViewModel addJobViewModel)
         {
             if (ModelState.IsValid)

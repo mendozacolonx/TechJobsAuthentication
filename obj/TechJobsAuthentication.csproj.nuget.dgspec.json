@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/john/Desktop/launchcode/TechJobsAuthentication/TechJobsAuthentication.csproj": {}
+    "C:\\Users\\mendo\\LaunchCode\\c#\\Studios\\ch18studio\\TechJobsAuthentication\\TechJobsAuthentication.csproj": {}
   },
   "projects": {
-    "/home/john/Desktop/launchcode/TechJobsAuthentication/TechJobsAuthentication.csproj": {
+    "C:\\Users\\mendo\\LaunchCode\\c#\\Studios\\ch18studio\\TechJobsAuthentication\\TechJobsAuthentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/john/Desktop/launchcode/TechJobsAuthentication/TechJobsAuthentication.csproj",
+        "projectUniqueName": "C:\\Users\\mendo\\LaunchCode\\c#\\Studios\\ch18studio\\TechJobsAuthentication\\TechJobsAuthentication.csproj",
         "projectName": "TechJobsAuthentication",
-        "projectPath": "/home/john/Desktop/launchcode/TechJobsAuthentication/TechJobsAuthentication.csproj",
-        "packagesPath": "/home/john/.nuget/packages/",
-        "outputPath": "/home/john/Desktop/launchcode/TechJobsAuthentication/obj/",
+        "projectPath": "C:\\Users\\mendo\\LaunchCode\\c#\\Studios\\ch18studio\\TechJobsAuthentication\\TechJobsAuthentication.csproj",
+        "packagesPath": "C:\\Users\\mendo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mendo\\LaunchCode\\c#\\Studios\\ch18studio\\TechJobsAuthentication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/john/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mendo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,9 +44,17 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.0, )"
             },
@@ -69,7 +79,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -81,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
